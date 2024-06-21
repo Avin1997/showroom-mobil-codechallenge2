@@ -21,8 +21,8 @@ export default function Header() {
               ["ABOUT US", `/about`],
               ["SERVICE", `/service`],
               ["TEAM", `/team`],
-            ].map((menu) => (
-              <li>
+            ].map((menu, index) => (
+              <li key={index}>
                 <Link href={menu[1]} className="font-bold hover:text-blue-500">
                   {menu[0]}
                 </Link>

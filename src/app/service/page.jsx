@@ -32,7 +32,7 @@ export default async function Service() {
       </div>
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {sorums.map((sorum) => (
-          <Card sorum={sorum} />
+          <Card key={sorum.id} sorum={sorum} />
         ))}
       </div>
     </div>
